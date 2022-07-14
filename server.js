@@ -33,7 +33,7 @@ app.post('/users',(req,res)=>{
 })
 
 app.route('/users/:id')
-// READ
+/// READ
 .get((req,res)=>{
   User.findById(req.params.id,(err,data)=>{
     if (err){
